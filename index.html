@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Coding</title>
+    <script>
+      // launch a new popup window
+      function openPopup() {
+        window.open("popup.html", "Popup", "width=600,height=400");
+      }
+      // display a error message in the popup window
+      function displayLogoMessage(message) {
+        const popup = window.open(
+          "popup.html",
+          "Popup",
+          "width=600,height=400"
+        );
+        popup.onload = function () {
+          popup.document.body.innerHTML =
+            "<h1>About Us</h1><p>" + message + "</p>";
+        };
+      }
+    </script>
+  </head>
+  <body>
+    <h1>
+      
+      <span>Today I Learned</span>
+    </h1>
+    <ul>
+      <li>
+        <p>
+          A Random Dream is the best poem blog
+          <span
+            ><a href="https://arandomdream.com/" target="_blank"
+              >(Source)</a
+            ></span
+          >
+          <span><b>#Blogging</b></span>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Millennial dads spend 3 times as much time with their kids than their
+          fathers spent with them. In 1982, 43% of fathers had never changed a
+          diaper. Today, that number is down to 3%
+          <span
+            ><a
+              href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+              target="_blank"
+              >(Source)</a
+            ></span
+          >
+          <span><b>#Society</b></span>
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
